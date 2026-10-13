@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя персональна сторінка</title>
+  <style>
+    :root { --accent: #2563eb; --ink: #1f2937; --paper: #ffffff; --soft: #eff6ff; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: var(--ink); background: #f3f4f6; }
+    header { background: linear-gradient(135deg, #1d4ed8, #7c3aed); color: white; padding: 2.5rem 1rem; text-align: center; }
+    header h1 { margin: 0 0 .4rem; }
+    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    section { background: var(--paper); padding: 1.5rem; margin-bottom: 1.2rem; border-radius: 14px; box-shadow: 0 4px 16px #11182712; }
+    h2 { color: var(--accent); margin-top: 0; }
+    .highlight { background: var(--soft); padding: .9rem 1rem; border-left: 4px solid var(--accent); border-radius: 6px; }
+    ul { padding-left: 1.4rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: .5rem; }
+    caption { font-weight: bold; text-align: left; padding: .5rem 0; }
+    th, td { border: 1px solid #cbd5e1; padding: .7rem; text-align: left; }
+    th { background: #dbeafe; }
+    a { color: var(--accent); }
+    .badge { display: inline-block; background: #ede9fe; color: #5b21b6; padding: .2rem .65rem; border-radius: 99px; margin: .2rem; }
+    footer { text-align: center; color: #64748b; padding: 1.2rem; }
+    @media (max-width: 600px) { th, td { padding: .45rem; } section { padding: 1rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Моя персональна сторінка</h1>
+    <p>Навчальна HTML-сторінка — лабораторна робота № 2</p>
+  </header>
+  <main>
+    <section>
+      <h2>Про мене</h2>
+      <p>Привіт! Мене звати <strong>Денис</strong>. Я навчаюся та вивчаю вебтехнології.</p>
+      <p class="highlight">Мій улюблений колір — <strong>Зелений</strong>. У вільний час я захоплююся <strong>Відеоіграми</strong>.</p>
+    </section>
+    <section>
+      <h2>Мої вподобання</h2>
+      <p>Ось кілька речей, які мені подобаються:</p>
+      <ul>
+        <li>Відеоігри</li>
+        <li>Піцца</li>
+        <li>Аніме</li>
+      </ul>
+      <blockquote>«Навчання — це шлях до нових можливостей».</blockquote>
+    </section>
+    <section>
+      <h2>Моя невелика таблиця</h2>
+      <table>
+        <caption>Мої вподобання</caption>
+        <thead><tr><th scope="col">Категорія</th><th scope="col">Мій вибір</th><th scope="col">Оцінка (1–10)</th></tr></thead>
+        <tbody>
+          <tr><td>Колір</td><td>Зелений</td><td>10</td></tr>
+          <tr><td>Хобі</td><td>Відеоігри</td><td>9</td></tr>
+          <tr><td>Їжа</td><td>Піцца</td><td>10</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>Корисне посилання</h2>
+      <p>Документація з HTML: <a href="https://developer.mozilla.org/uk/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs — HTML</a>.</p>
+    </section>
+    <section>
+      <h2>Додатковий елемент: мої цілі</h2>
+      <p>У веброзробці я хочу навчитися:</p>
+      <p><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JavaScript</span></p>
+    </section>
+  </main>
+  <footer><p>Лабораторна робота № 2 · Вебтехнології та вебдизайн · [Рік]</p></footer>
+</body>
+</html>
